@@ -41,3 +41,8 @@ If (0 < $y && $y < 10){
 If (0 < $z && $z < 10){
  echo "0 is less than {$z} AND {$z} is less than 10".
 }
+
+
+
+
+?>
