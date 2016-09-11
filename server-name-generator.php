@@ -11,8 +11,13 @@ function serverGenerator(){
 
 	$randNouns=array_rand($nouns, 1);
 
-	echo $randAdjective . " " . $randNouns;
+	$data = array('randAdjective' =>$randAdjective ,'randNouns'=>$randNouns );
 
-}
+	return $data;
 
-serverGenerator();
+	}
+
+	extract(serverGenerator());
+
+echo $randAdjective . " " . $randNouns;
+
